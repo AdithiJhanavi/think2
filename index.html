@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Using React Libraries</title>
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+  <div id="react-container"></div> 
+  <script src="./app.js"></script>  
+</body>
+
+ <script type="text/babel">
+  class ReactContainerTwo extends React.Component{
+
+    render(){
+        return (
+        <div>Hello!!!! Welcome to Kalvium   
+           <div>Let's goooo - this is babel</div>
+       </div> )
+    };  
+}
+const containerFour = document.getElementById('react-container');
+ReactDOM.render(<ReactContainerTwo/>,containerFour);
+
+</script> 
+
+
+</html>
